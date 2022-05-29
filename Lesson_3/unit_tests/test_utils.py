@@ -3,11 +3,11 @@ import sys
 import unittest
 import json
 
-sys.path.insert(0, os.path.join(os.getcwd(), '..'))
+sys.path.insert(os.path.join(os.getcwd(), '..'))
 print(sys.path)
 
-from Lesson_3.general.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE, ENCODING
-from Lesson_3.general.utils import get_message, send_message
+from general.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE, ENCODING
+from general.utils import get_message, send_message
 
 
 class TestSocket:

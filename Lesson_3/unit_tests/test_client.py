@@ -1,11 +1,12 @@
 import unittest
 import os
 import sys
-from Lesson_3.client import create
-from Lesson_3.client import ans
-sys.path.insert(0, os.path.join(os.getcwd(), '..'))
+sys.path.insert(os.path.join(os.getcwd(), '..'))
+from client import create
+from client import ans
 
-from Lesson_3.general.variables import ACTION, TIME, USER, ACCOUNT_NAME, PRESENCE, RESPONSE, ERROR
+
+from general.variables import ACTION, TIME, USER, ACCOUNT_NAME, PRESENCE, RESPONSE, ERROR
 
 
 class ClientTest(unittest.TestCase):

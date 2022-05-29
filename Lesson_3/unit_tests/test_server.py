@@ -1,10 +1,9 @@
 import sys
 import os
 import unittest
-from Lesson_3.general.variables import ACTION, ACCOUNT_NAME, RESPONSE, ENCODING, PRESENCE, ERROR, TIME, USER
-from Lesson_3.server import client_message
-
-sys.path.insert(0, os.path.join(os.getcwd(), '..'))
+sys.path.insert(os.path.join(os.getcwd(), '..'))
+from general.variables import ACTION, ACCOUNT_NAME, RESPONSE, ENCODING, PRESENCE, ERROR, TIME, USER
+from server import client_message
 
 
 # Тустируем сервер
